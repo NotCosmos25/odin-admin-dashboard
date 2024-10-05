@@ -1,0 +1,285 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) 4fr;
+    grid-template-rows: 16vh 1fr;
+    font-family: Roboto;
+}
+
+img, button, .sidebar-title, .dashboard-header {
+    cursor: pointer;
+}
+
+
+ .icons {
+    width: 28px;
+}
+
+header {
+    display: grid;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.header-row {
+    display: flex;
+    max-height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.search-container {
+    display: flex;
+    flex: 2;
+    min-width: 100px;
+}
+
+.search-container img {
+    margin-right: 15px;
+}
+
+.search-container #search {
+    width: 100%; 
+
+}
+
+.header-right-container {
+    display: flex;
+    column-gap: 30px;
+    flex: 1;
+    justify-content: right;
+    align-items: center;
+}
+
+.header-row:first-child .profile-picture{
+    object-fit: cover; 
+    border-radius: 50%;
+} 
+
+.header-right-container img:first-child {
+    margin-left: 50px;
+}
+
+.username {
+    text-wrap: nowrap;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.header-intro-container {
+    display: flex;
+    align-items: center;
+}
+
+.intro {
+    font-weight: bold;
+    margin: 0px 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+
+}
+
+.header-row:nth-child(2) {
+    display: grid;
+    grid-template-columns: minmax(400px, 1fr) 350px;
+    margin-bottom: 25px;
+}
+
+.header-row:nth-child(2) .profile-picture {
+    width: 75px;
+    height: 75px;
+}
+
+.intro-greeting {
+    margin: 0px;
+    font-size: 0.9em;
+}
+
+.full-name {
+    font-size: 1.3em;
+    margin: 0px;
+}
+
+.header-buttons-container {
+    display: flex;
+    justify-content: right;
+    column-gap: 40px;
+}
+
+.header-buttons {
+    background-color: #1992D3;
+    border: none;
+    width: 100px;
+    height: 36px;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.sidebar {
+    grid-row: 1/3;
+    background-color: #1992D3;    
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+.sidebar-row {
+    display: flex;
+    justify-content: left;
+}
+
+.sidebar-title {
+    margin: 16px 0px;
+}
+
+.icon-container {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar-row:first-child {
+    margin-bottom: 25px;
+}
+
+.sidebar-row:first-child .icons {
+    width: 50px;
+}
+
+.dashboard-header {
+    font-size: 1.5em;
+}
+
+.sidebar-row:nth-child(8) {
+    margin-top: 50px;
+}
+
+.main-content {
+    background-color: #E2E8F0;
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    padding: 25px 25px;
+    padding-bottom: 50px;
+}
+
+.main-title-container {
+    height: 40px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.main-left-whole-container {
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-left-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+    column-gap: 30px;
+    row-gap: 25px;
+    flex: 1;
+}
+
+.project-card {
+    background-color: white;
+    padding: 15px;
+    display: flex; 
+    flex-direction: column;
+    border-radius: 8px;
+    border-left: 10px solid orange;
+}
+
+.project-card-title {
+    font-weight: bold;
+    margin: 0px;
+}
+
+.project-card-info{
+    color: gray;
+}
+
+.project-card-icons-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    column-gap: 25px;
+    height: 100%;
+    padding-right: 25px;
+    
+}
+
+.main-right-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.main-right-title {
+    font-weight: bold;
+    margin: 0px;
+}
+
+.announcements-container, .trending-container {
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+.announcement-row-container {
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.announcement-row-container:last-child {
+    border: none;
+}
+
+.announcement-row-title {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.announcement-row-description {
+    color: gray;
+    font-size: 0.8em; 
+}
+
+.trending-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.trending-row-container {
+    display: flex;
+    align-items: center;
+}
+
+.trending-name-container {
+    margin-left: 25px;
+}
+
+.trending-container p {
+    margin: 4px 0px;
+    font-size: 0.9em;
+}
+
+.trending-app-name {
+    color: gray;
+}
+
+
+
